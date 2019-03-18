@@ -1,3 +1,11 @@
+require("dotenv").config();
+Add the code required to import the keys.js file and store it in a variable.
+  var keys = require("./keys.js");
+You should then be able to access your keys information like so
+
+var spotify = new Spotify(keys.spotify);
+
+
 var axios = require("axios");
 
 axios.get("https://en.wikipedia.org/wiki/Kudos_(granola_bar)").then(
@@ -11,11 +19,22 @@ axios.get("https://en.wikipedia.org/wiki/Kudos_(granola_bar)").then(
   var imdb = require('imdb-node-api');
 
 
-// Replace with your mapquest consumer API key
+//  API key
 var options = {
   provider: "bands-in-town",ß
   apiKey: "5Z91W6eGkoJIbceCHQl6WxSlOxcgiA3k"
 };
+var options = {
+  provider: "imbd",ß
+  apiKey: "b33ed512"
+};
+var options = {
+  provider: "imbd",ß
+  apiKey: "b33ed512"
+};
+
+// =========================
+
 var options = {
   'artist': 'skrillex',
   'app_id': 'my_app_id',
