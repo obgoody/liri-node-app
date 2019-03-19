@@ -1,1 +1,30 @@
 spotify-this-song,"I Want it That Way"
+
+Mac-f45c89bb6b05:liri-node-app apple$ node liri.js spotify-this-song dancing on the ceiling
+this is loaded
+Error occurred: StatusCodeError: 400 - {"error":"invalid_client","error_description":"Invalid client"}
+Mac-f45c89bb6b05:liri-node-app apple$ node liri.js concert-this pearl jam
+this is loaded
+https://rest.bandsintown.com/artists/pearl/events?app_id=codingbootcamp#
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Venue Name : Blackbird On Pearl
+Venue Location: Tulsa,United States
+Date of the Event: 03/18/2019
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mac-f45c89bb6b05:liri-node-app apple$ node liri.js movie-this rambo
+this is loaded
+http://www.omdbapi.com/?t=rambo&y=&plot=short&apikey=trilogy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Movie Title: Rambo
+Year: undefined
+IMDB Rating: 7.0
+Rotten Tomatoes Rating: 37%
+Country: Germany, USA
+Language: English, Burmese, Thai
+Plot: In Thailand, John Rambo joins a group of mercenaries to venture into war-torn Burma, and rescue a group of Christian aid workers who were kidnapped by the ruthless local infantry unit.
+Actors: Sylvester Stallone, Julie Benz, Matthew Marsden, Graham McTavish
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Mac-f45c89bb6b05:liri-node-app apple$ node liri.js spotify-this-song wild thing
+this is loaded
+Error occurred: StatusCodeError: 400 - {"error":"invalid_client","error_description":"Invalid client"}
+Mac-f45c89bb6b05:liri-node-app apple$ 

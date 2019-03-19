@@ -37,16 +37,15 @@ function concertIt(bandQuery) {
             var momentDT = moment().format('L');
 
 
-            // console.log(concertData);
-            // for (i = 0; i < movieData.length && i < 5; i++) {
-            console.log("===============================");
+           
+            console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             // * Name of the venue
             console.log("Venue Name : " + concertData[0].venue.name +
                 // * Venue location
                 "\nVenue Location: " + concertData[0].venue.city + "," + concertData[0].venue.country +
                 //  * Date of the Event (use moment to format this as "MM/DD/YYYY")
                 "\nDate of the Event: " + momentDT +
-                "\n===============================");
+                "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             
         };
     });
@@ -79,7 +78,7 @@ function spotifyIt(musicSearch) {
                 "\nLink to Song: " + musicQuery.preview_url +
                 //== The album 
                 "\nAlbum Name: " + musicQuery.album.name +
-                "\n===============================");
+                "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             }
         };  
     });
@@ -104,7 +103,7 @@ function movieIt (movieQuery) {
             var movieData = JSON.parse(body);
                                    
             // for (i = 0; i < movieData.length && i < 5; i++) {
-                console.log("===============================");
+                console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             // == Title===              
                 console.log("Movie Title: " + movieData.Title +
             // ==Year ===
@@ -121,7 +120,7 @@ function movieIt (movieQuery) {
                 "\nPlot: " + movieData.Plot +
             // ==Actors 
                 "\nActors: " + movieData.Actors +
-                "\n===============================");             
+                "\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");             
             // };
         };
     }); 
@@ -147,7 +146,7 @@ var ask = function (commands, funData){
         console.log("Invalid command. Please try again");
     }
 };
-// found on git
+// ===do-what-it-says====
 var doWhatItSays = function() {
     fs.readFile("random.txt", "utf8", function (err, data) {
         if (err) throw err;
