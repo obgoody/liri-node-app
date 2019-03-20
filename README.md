@@ -1,10 +1,7 @@
 # LIRI Bot
 
-![Alt text](images/Screenshot1);
-![Alt text](images/Screenshot2);
-![Alt text](images/Screenshot3);
-![Alt text](images/Screenshot4);
-![Alt text](images/Screenshot5);
+![liri castify link](https://drive.google.com/file/d/10pgTcKrtZKhMWKU0ri6hTTm3cCWOzodD/view);
+
 
 ### Overview
 

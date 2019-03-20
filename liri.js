@@ -3,8 +3,6 @@ var fs = require('fs');
 var Spotify = require('node-spotify-api');
 var dotenv = require("dotenv").config();
 var keys = require("./keys.js");
-
-//=========moment js=========
 var moment = require('moment');
 moment().format();
 
@@ -67,7 +65,7 @@ function spotifyIt(musicSearch) {
         }
                     
         else {
-            for (i = 0; i < data.tracks.items.length ; i++){
+            for (i = 0; i < data.tracks.items.length && i < 3; i++){
             
                 var musicQuery = data.tracks.items[i];
                
@@ -102,7 +100,7 @@ function movieIt (movieQuery) {
            
             var movieData = JSON.parse(body);
                                    
-            // for (i = 0; i < movieData.length && i < 5; i++) {
+           
                 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             // == Title===              
                 console.log("Movie Title: " + movieData.Title +
