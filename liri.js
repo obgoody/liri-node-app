@@ -1,4 +1,5 @@
-var request = require('request');
+
+var axios = require('request');
 var fs = require('fs');
 var Spotify = require('node-spotify-api');
 var dotenv = require("dotenv").config();
@@ -13,7 +14,10 @@ var spotify = new Spotify(keys.spotify);
 var command = process.argv[2];
 var input = process.argv[3];
 
-
+// axios.get("https://en.wikipedia.org/wiki/Kudos_(granola_bar)").then(
+//   function(response) {
+//     console.log(response.data);
+//   },
 //===========concert-this================
 
 
@@ -24,7 +28,7 @@ function concertIt(bandQuery) {
     
     console.log(queryUrl);
 
-    request(queryUrl, function (error, response, body) {
+    axios(queryUrl, function (error, response, body) {
 
         
         if (!error && response.statusCode === 200) {
@@ -93,13 +97,13 @@ function movieIt (movieQuery) {
 
     console.log(queryUrl);
 
-    request(queryUrl, function (error, response, body) { 
+    axios(queryUrl, function (error, response, body) { 
         
     
        if (!error && response.statusCode === 200) {      
            
             var movieData = JSON.parse(body);
-                                   
+                    // console.table(movieData)   
            
                 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
             // == Title===              
