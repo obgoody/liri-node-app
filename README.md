@@ -1,6 +1,6 @@
 # LIRI Bot
 
-![liri](https://drive.google.com/file/d/10pgTcKrtZKhMWKU0ri6hTTm3cCWOzodD/view);
+![liri](https://drive.google.com/file/d/10pgTcKrtZKhMWKU0ri6hTTm3cCWOzodD/view)
 
 
 ### Overview
