@@ -67,7 +67,7 @@ function spotifyIt(musicSearch) {
         }
                     
         else {
-            for (i = 0; i < data.tracks.items.length && i < 5; i++){
+            for (i = 0; i < data.tracks.items.length ; i++){
             
                 var musicQuery = data.tracks.items[i];
                
@@ -146,7 +146,12 @@ var ask = function (commands, funData){
         console.log("Invalid command. Please try again");
     }
 };
+
+
 // ===do-what-it-says====
+
+
+
 var doWhatItSays = function() {
     fs.readFile("random.txt", "utf8", function (err, data) {
         if (err) throw err;
